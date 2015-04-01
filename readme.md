@@ -3,10 +3,10 @@ How to reproduce bug
 ====================
 
 1. Clone this repo and run ```meteor``` in the directory.
-1.5 Open the page up in your browser.
-2. Ensure that there is more than one item in the autoform array.
-3. Remove any item **other than the last item**
-4. Click 'save'
+2. Open the page up in your browser.
+3. Ensure that there is more than one item in the autoform array.
+4. Remove any item **other than the last item**
+5. Click 'save'
 
 Behavior
 =========
