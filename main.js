@@ -25,16 +25,18 @@ Contacts.attachSchema(
 // Add a tiny bit of data
 // ======================
 
-if (Contacts.find().count() === 0) {
-  Contacts.insert({
-    phoneNumbers: [{
-      label: "number1",
-      number: "123"
-    },{
-      label: "number2",
-      number: "1234"
-    },]
-  });
+if (Meteor.isServer) {
+  if (Contacts.find().count() === 0) {
+    Contacts.insert({
+      phoneNumbers: [{
+        label: "number1",
+        number: "123"
+      },{
+        label: "number2",
+        number: "1234"
+      },]
+    });
+  }
 }
 
 
